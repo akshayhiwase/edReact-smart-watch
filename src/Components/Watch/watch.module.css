@@ -1,0 +1,36 @@
+.watch_container {
+  width: 40%;
+  height: auto;
+}
+.watch img {
+  width: 100%;
+  height: auto;
+}
+.heart_section {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  color: white;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.heart_section i {
+  color: red;
+  font-size: 45px;
+  animation: pulse 0.8s infinite;
+}
+.heart_section p {
+  font-size: 25px;
+  margin-left: 8px;
+}
