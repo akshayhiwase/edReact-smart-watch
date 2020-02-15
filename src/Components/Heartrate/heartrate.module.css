@@ -26,3 +26,42 @@
   font-size: 25px;
   margin-left: 8px;
 }
+@media (max-width: 1200px) {
+  .heart_section {
+    top: 43%;
+    left: 17%;
+  }
+}
+@media (max-width: 900px) {
+  .heart_section {
+    top: 37%;
+    left: 17%;
+  }
+}
+@media (max-width: 768px) {
+  .heart_section {
+    width: 100%;
+    top: 32%;
+    left: 17%;
+  }
+  .heart_section i {
+    font-size: 35px;
+  }
+  .heart_section p {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .heart_section {
+    top: 27%;
+    left: 17%;
+  }
+  .heart_section i {
+    font-size: 25px;
+  }
+  .heart_section p {
+    font-size: 18px;
+    margin-right: 15px;
+  }
+}

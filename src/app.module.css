@@ -7,3 +7,24 @@
   display: flex;
   justify-content: flex-start;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}

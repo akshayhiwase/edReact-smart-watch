@@ -14,7 +14,7 @@ class App extends React.Component {
       imgSrc: "https://i.imgur.com/Zygu7I3.png",
       alt: "PinkWatch",
       time: this.props,
-      displayStaus: false
+      displayStaus: true
     }
 
     this.onRedColorClicked = this.onRedColorClicked.bind(this)
