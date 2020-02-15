@@ -4,6 +4,8 @@ import Logo from './Components/Logo/Logo'
 import Watch from './Components/Watch/Watch'
 import WatchData from './Components/WatcInfo/WatchInfo'
 import AppCss from './app.module.css'
+import Timer from './Components/Time/Time';
+import HeartRate from './Components/Heartrate/HeartRate'
 
 class App extends React.Component {
   constructor(props) {
@@ -11,13 +13,16 @@ class App extends React.Component {
     this.state = {
       imgSrc: "https://i.imgur.com/Zygu7I3.png",
       alt: "PinkWatch",
-      time: this.props
+      time: this.props,
+      displayStaus: false
     }
 
     this.onRedColorClicked = this.onRedColorClicked.bind(this)
     this.onBlueColorClicked = this.onBlueColorClicked.bind(this)
     this.onBlackColorClicked = this.onBlackColorClicked.bind(this)
     this.onPurpleColorClicked = this.onPurpleColorClicked.bind(this)
+    this.showTime = this.showTime.bind(this)
+    this.showHeartRate = this.showHeartRate.bind(this)
   }
 
 
@@ -55,8 +60,18 @@ class App extends React.Component {
       alt: updatedAlt
     })
   }
-
+  showTime() {
+    this.setState({
+      displayStaus: true
+    });
+  }
+  showHeartRate() {
+    this.setState({
+      displayStaus: false
+    })
+  }
   render() {
+    let display = this.state.displayStaus === true ? <Timer /> : <HeartRate />
     return (
       <div className={AppCss.App}>
         <div className={AppCss.header}>
@@ -67,8 +82,11 @@ class App extends React.Component {
         <div className={AppCss.container}>
 
 
-          <Watch img={this.state.imgSrc} alt={this.state.alt} />
-          <WatchData red={this.onRedColorClicked} blue={this.onBlueColorClicked} black={this.onBlackColorClicked} purple={this.onPurpleColorClicked} />
+          <Watch img={this.state.imgSrc} alt={this.state.alt} >
+            {display}
+          </Watch>
+
+          <WatchData red={this.onRedColorClicked} blue={this.onBlueColorClicked} black={this.onBlackColorClicked} purple={this.onPurpleColorClicked} showTime={this.showTime} showHeartRate={this.showHeartRate} />
         </div>
       </div>
 

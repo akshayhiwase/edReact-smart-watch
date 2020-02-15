@@ -13,6 +13,7 @@
   border-radius: 10px;
   background-color: #ca3d22;
   cursor: pointer;
+  margin-right: 5px;
 }
 .blueband {
   width: 65px;
@@ -20,6 +21,7 @@
   border-radius: 10px;
   background-color: #565681;
   cursor: pointer;
+  margin-right: 5px;
 }
 .blackband {
   width: 65px;
@@ -27,6 +29,7 @@
   border-radius: 10px;
   background-color: #23211f;
   cursor: pointer;
+  margin-right: 5px;
 }
 .purpleband {
   width: 65px;
@@ -34,6 +37,7 @@
   border-radius: 10px;
   background-color: #8a5362;
   cursor: pointer;
+  margin-right: 5px;
 }
 .feature_section {
   width: 50%;
@@ -47,6 +51,7 @@
   border-radius: 5px;
   background-color: #ccc;
   cursor: pointer;
+  outline: none;
 }
 .heartbtn {
   width: 100px;
@@ -54,6 +59,7 @@
   border-radius: 5px;
   background-color: #ccc;
   cursor: pointer;
+  outline: none;
 }
 .buy_section {
   width: 50%;

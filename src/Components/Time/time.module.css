@@ -1,0 +1,10 @@
+.timer_section {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  color: white;
+}
+.timer_section h1 {
+  font-size: 25px;
+  margin-left: 20px;
+}

@@ -18,8 +18,8 @@ const watchData = (props) => {
             </div>
             <h2>Feature</h2>
             <div className={WatchInfo.feature_section}>
-                <button className={WatchInfo.timebtn} onClick={props.time}>Time</button>
-                <button className={WatchInfo.heartbtn}>Heart Rate</button>
+                <button className={WatchInfo.timebtn} onClick={props.showTime}>Time</button>
+                <button className={WatchInfo.heartbtn} onClick={props.showHeartRate}>Heart Rate</button>
             </div>
             <div className={WatchInfo.buy_section}>
                 <button className={WatchInfo.buybtn}>Buy Now</button>
