@@ -1,11 +1,11 @@
 import React from 'react';
 import WatchCss from './watch.module.css'
 
-const watch = () => {
+const watch = (props) => {
     return (
         <div className={WatchCss.watch_container}>
             <div className={WatchCss.watch}>
-                <img src="https://i.imgur.com/Zygu7I3.png" alt="WatchLogo" />
+                <img src={props.img} alt={props.alt} />
             </div>
 
 
@@ -13,6 +13,7 @@ const watch = () => {
                 <i className="fas fa-heartbeat"></i>
                 <p>64</p>
             </div>
+
         </div>
     )
 }
